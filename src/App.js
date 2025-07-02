@@ -7,7 +7,7 @@ import RenderClickCounter from './Render/RenderClickCounter';
 import RenderHoverCounter from './Render/RenderHoverCounter';
 import IndexComponent from './ApiComponent/IndexComponent';
 import PostComponent from './ApiComponent/PostComponent';
-
+import ArrayUseState from './useState/ArrayUseState';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
      )} />
       <PostComponent />
      <IndexComponent />
+     <ArrayUseState />
     
     </>
   );

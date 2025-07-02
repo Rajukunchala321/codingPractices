@@ -11,7 +11,7 @@ class IndexComponent extends Component {
   componentDidMount(){
     axios.get("https://jsonplaceholder.typicode.com/posts")
     .then((response)=>{
-     // console.log(response);
+      console.log(response);
       this.setState({
         data: response.data
       })
