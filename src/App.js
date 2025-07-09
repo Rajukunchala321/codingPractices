@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import ClickCounter from './HigherOrder/ClickCounter';
 import OverCounter from './HigherOrder/OverCounter';
 import RenderCount from './Render/RenderCount';
@@ -10,10 +11,18 @@ import ArrayUseState from './useState/ArrayUseState';
 import WithoutHook from './UseEffect/WithoutHook';
 import DataFetching from './UseEffect/DataFetching';
 import SinglePostDataFetch from './UseEffect/SinglePostDataFetch';
+import ComponentC from './UseContextHook/ComponentC';
+
+export const UserContent = React.createContext();
 
 function App() {
+
   return (
     <>
+    <UserContent.Provider value="This is UserContent">
+      <ComponentC />
+    </UserContent.Provider>
+    
     <SinglePostDataFetch />
     <DataFetching />
       
