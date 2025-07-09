@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ClickCounter from './HigherOrder/ClickCounter';
 import OverCounter from './HigherOrder/OverCounter';
@@ -8,12 +7,16 @@ import RenderHoverCounter from './Render/RenderHoverCounter';
 import IndexComponent from './ApiComponent/IndexComponent';
 import PostComponent from './ApiComponent/PostComponent';
 import ArrayUseState from './useState/ArrayUseState';
+import WithoutHook from './UseEffect/WithoutHook';
+import DataFetching from './UseEffect/DataFetching';
+
 
 function App() {
   return (
     <>
-
-    
+    <DataFetching />
+      
+     <WithoutHook />
      <ClickCounter />
      <OverCounter />
      
@@ -27,6 +30,7 @@ function App() {
      <IndexComponent />
      <ArrayUseState />
     
+     
     </>
   );
 }
