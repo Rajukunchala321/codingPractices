@@ -9,11 +9,12 @@ import PostComponent from './ApiComponent/PostComponent';
 import ArrayUseState from './useState/ArrayUseState';
 import WithoutHook from './UseEffect/WithoutHook';
 import DataFetching from './UseEffect/DataFetching';
-
+import SinglePostDataFetch from './UseEffect/SinglePostDataFetch';
 
 function App() {
   return (
     <>
+    <SinglePostDataFetch />
     <DataFetching />
       
      <WithoutHook />
