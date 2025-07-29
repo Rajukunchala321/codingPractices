@@ -12,6 +12,7 @@ import WithoutHook from './UseEffect/WithoutHook';
 import DataFetching from './UseEffect/DataFetching';
 import SinglePostDataFetch from './UseEffect/SinglePostDataFetch';
 import ComponentC from './UseContextHook/ComponentC';
+import MultiUseReducer from './UseReducer/MultiUseReducer';
 
 export const UserContent = React.createContext();
 
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+    <MultiUseReducer />
     <UserContent.Provider value="This is UserContent">
       <ComponentC />
     </UserContent.Provider>
