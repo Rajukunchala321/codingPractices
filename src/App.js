@@ -14,12 +14,16 @@ import SinglePostDataFetch from './UseEffect/SinglePostDataFetch';
 import ComponentC from './UseContextHook/ComponentC';
 import MultiUseReducer from './UseReducer/MultiUseReducer';
 import ComponentA from './UseReducerUseContext/ComponentA';
+import ApiFetching from './APIFetchingWithuseReducer/ApiFetching';
+import ApiFetchWithUseReducer from './APIFetchingWithuseReducer/ApiFetchWithUseReducer'
 export const UserContent = React.createContext();
 
 function App() {
 
   return (
     <>
+    <ApiFetchWithUseReducer />
+    <ApiFetching />
     <ComponentA />
     <MultiUseReducer />
     <UserContent.Provider value="This is UserContent">
